@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: rgb(0,0,33);
+    box-sizing: border-box;
+    font-family: 'times new roman';
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border:none;
+    outline: none;
+
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width:100%;
+    /* overflow:hidden; */
+}
+.nav{
+    width:100%;
+    position:fixed;
+    padding:2rem 9%;
+    top:0;
+    left:0;
+    z-index:100;
+    
+    
+}
+.nav ul{
+    display: flex;
+    float:right;
+}
+.nav li{
+    list-style:none;
+    position: relative;
+    
+}
+.nav li a{
+    text-decoration: none;
+    font-size:1.8rem;
+    color:rgb(192, 248, 255);
+    padding:1.4rem 1.6rem;
+    transition:0.3s;
+    
+  
+}
+.nav li a:hover,
+.nav li a.active{
+    color:white;
+}
+.nav li a.active::after,
+.nav li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background:white;
+    position: absolute;
+    bottom:-4px;
+    left:20px;
+
+
+}
+.main h1{
+    font-size: 8.5rem;
+    color:white;
+    text-align: center ;
+    padding-top: 5rem;
+}
+.main h1 span{
+    color:rgb(192, 248, 255);
+}
+.main{
+    width:100%;
+    height:100vh;
+}
+.col1 h3{
+    font-size:3rem;
+}
+.box h5{
+    font-size: 1.9rem;
+    color:rgb(149, 143, 143);
+}
+
+.box h5 span{
+    color:white;
+}
+.main .personalinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    color:white;
+  }
+.main .personalinfo .col1{
+    -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+.main .persoanlinfo .col1 .box-container {
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .main .persoanlinfo .col1 .box-container .box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  
+  }
+  .main .persoanlinfo .col1 .box-container .box h5 {
+    
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+
+    
+  }
+.personalinfo{
+    display:flex;
+    padding:2rem 3rem;
+    line-height: 20pt;
+    width:100%;
+    /* height:50vh; */
+}
+
+.photo h3{
+    /* text-align: left; */
+    color:white;
+    font-family:serif;
+    text-decoration-line:underline;
+    text-decoration-color:rgb(192, 248, 255);
+    font-size: 2rem;
+    padding:0 3rem;
+    
+}
+.box-container{
+    display:flex;
+}
+.box{
+    padding:0 1rem;
+}
+.photo img{
+    border-radius: .4rem;
+    width:70%;
+    padding:2rem 4rem;
+    object-fit: contain;
+}
+.col1 button{
+    position:relative;
+    top:3rem;
+    padding:1rem 3rem;
+    outline:none;
+    border:none;
+    background:rgb(48, 48, 106);
+    color:white;
+    font-weight: 600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    border-radius: 0.5rem;
+}
+.col1 button:hover{
+    background-color:white;
+    color:blue;
+}
+
+.toolkit .box-container {
+    position:relative;
+    top:7rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+.toolkit .box-container .box {
+    padding: 0.2rem;
+    text-align:center ;
+    -webkit-box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 0.05rem;
+    background:rgb(0,0,33);
+    
+  }
+  
+.toolkit .box-container .box:hover {
+    background:white;
+    transition:0.8s;
+  }
+  
+.toolkit .box-container .box:hover h4 {
+    color:white;
+    background-color: rgb(20, 147, 164);
+  }
+  
+.toolkit .box-container .box img {
+    height: 6rem;
+    margin-bottom: 0.4rem;
+  }
+  .myeducation{
+    
+    width:100vw;
+    height:60rem;
+    margin-top:2rem;
+    
+  }
+  .myeducation .qual1 {
+    color:white;
+    line-height: 22pt;
+    margin:3rem 3rem;
+    
+
+  }
+  
+  .myeducation .qual1 .college h2{
+    position: relative;
+    left:1.5rem;
+    font-size: 2.2rem;
+  }
+  .icon{
+    text-decoration: none;
+    font-size: 4rem;
+    position: relative;
+    bottom:0.8rem;
+  }
+  .myeducation .qual1 h4{
+    font-family:'montserrat';
+    color:rgb(192, 248, 255);
+    position: relative;
+    left:6rem;
+    font-size: 2rem;
+    
+
+  }
+  .college{
+    display: flex;
+  }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%;
+    }
+    .col1 .box-container{
+      flex-direction: column;
+  
+    }
+    .photo img{
+      /* display:flex;
+      align-items: center;
+      justify-content: center;
+      padding-top:2rem; */
+      display:none;
+    }
+    .photo h3{
+      /* padding-top:2rem;
+      margin-top: 3rem;
+      font-size:2.7rem; */
+      display:none;
+    }
+  
+  }
+  @media(max-width:1156px){
+    .photo{
+      margin-top: 2rem;
+    }
+    img{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
+    .photo h3{
+      text-align: center;
+    }
+  }
+  @media(max-width:400px){
+    html{
+      font-size: 40%;
+    }
+  }
