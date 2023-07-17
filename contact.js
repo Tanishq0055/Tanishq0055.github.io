@@ -1,5 +1,5 @@
 // Initialize EmailJS with your User ID
-emailjs.init("Bdy2avurldMInJFlj");
+emailjs.init("AAgU__Mwvbq_lOzij");
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -10,7 +10,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const message = document.getElementById('clientmessage').value;
 
     // Send the email using EmailJS
-    emailjs.send("service_4yfr4kr", "template_e7avomf", {
+    emailjs.send("service_6h3tz1q", "template_ce5xa0w", {
         name: name,
         email: email,
         mobileno:mobileno,
